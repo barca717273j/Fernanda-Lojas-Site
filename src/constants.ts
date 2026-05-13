@@ -3,7 +3,7 @@ import { Product } from './types';
 export const PRODUCTS: Product[] = [
   {
     id: '7',
-    name: 'Anel Promessa do Amor',
+    name: 'Essência do amor',
     tagline: '✔ 4.583 vendidos',
     description: 'Um anel delicado, com brilho encantador e acabamento impecável. O presente ideal para marcar um momento inesquecível no Dia dos Namorados.',
     originalPrice: 179.90,
@@ -20,7 +20,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: '8',
-    name: 'Anel Laço Eterno',
+    name: 'Amor verdadeiro',
     tagline: '✔ 4.742 vendidos',
     description: 'O queridinho dos casais apaixonados. Um símbolo simples, bonito e cheio de significado para celebrar o amor.',
     originalPrice: 199.90,
@@ -38,7 +38,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: '1',
-    name: 'Amor Infinito',
+    name: 'Caixinha do amor',
     tagline: '✔ 4.327 vendidos',
     description: 'Minimalista e delicado, ideal para quem valoriza a simplicidade do sentimento. Design exclusivo em Prata 925.',
     originalPrice: 249.90,
@@ -56,7 +56,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: '2',
-    name: 'Destino a Dois ⭐',
+    name: 'Rosa do amor',
     tagline: '✔ 4.891 vendidos',
     description: 'O MAIS VENDIDO. Design clássico que celebra grandes promessas com pequenos anéis. Perfeito para pedidos.',
     originalPrice: 299.90,
@@ -74,7 +74,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: '3',
-    name: 'Laço do Coração',
+    name: 'Essência do amor',
     tagline: '✔ 4.502 vendidos',
     description: 'Para quem ama de verdade e deseja eternizar cada sorriso compartilhado. Cravejado com zircônias premium.',
     originalPrice: 459.90,
@@ -92,7 +92,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: '4',
-    name: 'Promessa Dourada',
+    name: 'Destino a dois',
     tagline: '✔ 4.768 vendidos',
     description: 'Simplicidade e beleza em uma joia feita para durar tanto quanto o seu amor. Resistente e atemporal.',
     originalPrice: 389.90,
@@ -110,7 +110,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: '5',
-    name: 'Essência do Amor',
+    name: 'Coração dourado',
     tagline: '✔ 4.615 vendidos',
     description: 'Um toque de brilho sutil para quem não precisa de luxo para ser feliz. Elegância em cada detalhe.',
     originalPrice: 229.90,
@@ -128,7 +128,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: '6',
-    name: 'União Perfeita',
+    name: 'Promessa do coração',
     tagline: '✔ 4.954 vendidos',
     description: 'O acabamento perfeito para simbolizar a união de duas almas que se encontraram. Sublime e único.',
     originalPrice: 349.90,
