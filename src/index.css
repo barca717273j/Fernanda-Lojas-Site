@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Quicksand:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-romantic: "Playfair Display", serif;
+  
+  --color-brand-50: #fff9fa;
+  --color-brand-100: #ffeff2;
+  --color-brand-200: #ffcfd9;
+  --color-brand-300: #ff9fb4;
+  --color-brand-400: #ff6083;
+  --color-brand-500: #f43f5e;
+  --color-brand-600: #e11d48;
+  --color-brand-700: #be123c;
+  --color-brand-800: #9f1239;
+  --color-brand-900: #881337;
+
+  --color-gold-400: #f5d76e;
+  --color-gold-500: #f1c40f;
+  --color-gold-600: #d4ac0d;
+}
+
+@layer base {
+  body {
+    @apply bg-[#fdfaf7] text-gray-800 antialiased font-sans;
+    background-image: 
+      radial-gradient(circle at 2px 2px, rgba(230, 25, 92, 0.02) 1px, transparent 0);
+    background-size: 32px 32px;
+  }
+}
+
+.marble-texture {
+  background-color: #ffffff;
+  background-image: 
+    linear-gradient(55deg, transparent 48%, rgba(0,0,0,0.01) 50%, transparent 52%),
+    linear-gradient(125deg, transparent 48%, rgba(0,0,0,0.005) 50%, transparent 52%);
+  background-size: 400px 400px;
+}
+
+.romantic-gradient {
+  background: linear-gradient(135deg, #fb7185 0%, #fda4af 100%);
+}
+
+.photo-treated {
+  position: relative;
+  background: linear-gradient(to bottom, #ffffff 0%, #fdf2f8 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.photo-treated::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 60px rgba(255, 255, 255, 0.8), inset 0 0 100px rgba(251, 113, 133, 0.05);
+  pointer-events: none;
+}
+
+.heart-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 24 24' fill='%23fb7185' fill-opacity='0.1'%3E%3Cpath d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z' /%3E%3C/svg%3E");
+  background-size: 40px 40px;
+}
+
+.soft-shadow {
+  box-shadow: 0 10px 25px -5px rgba(244, 63, 94, 0.1);
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 60s linear infinite;
+  width: max-content;
+}
+
+@utility scrollbar-hide {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
